@@ -1,0 +1,127 @@
+<body style="background-color:darkgrey; margin: 0; font-family: Arial;">
+
+<form style="max-width: 600px; margin: 30px auto; background: aliceblue; padding: 20px; border-radius: 10px;">
+
+    <!-- NAME -->
+    <div style="margin-bottom: 15px;">
+        <label for="name">Ditt namn</label><br>
+        <input type="text" id="name" name="name" placeholder="Ditt namn" style="width: 100%; padding: 8px;">
+    </div>
+
+    <!-- TJÄNST -->
+    <div style="background-color: orange; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+
+        <p style="text-align: center; font-weight: bold;">Välj Tjänst</p>
+
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <label><input type="radio" name="Tjänst" value="bogsering"> Bogsering</label>
+            <label><input type="radio" name="Tjänst" value="bryggning"> Bryggning</label>
+            <label><input type="radio" name="Tjänst" value="handläggning"> Handläggning</label>
+        </div>
+
+        <!-- KUNDTYP -->
+        <div style="margin-top: 15px; background-color: chocolate; padding: 10px; border-radius: 6px;">
+            <p style="text-align: center; font-weight: bold;">Typ av kund</p>
+
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <label><input type="radio" name="kundTyp" value="privat"> Privat</label>
+                <label><input type="radio" name="kundTyp" value="företag"> Företag</label>
+            </div>
+
+
+             <div style="margin-top: 15px; background-color: brown; padding: 10px; border-radius: 6px;">
+            <p style="text-align: center; font-weight: bold;">Antal Anställda</p>
+
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <label><input type="radio" name="hiredwork" value="1-100"> 1-100</label>
+                <label><input type="radio" name="hiredwork" value="101-1000"> 101-1000</label>
+                <label><input type="radio" name="hiredwork" value=">1000"> >1000</label>
+
+            </div>
+
+            
+        </div>
+        </div>
+
+    </div>
+
+    <!-- HANTVERKARE -->
+    <div style="background-color: green; padding: 15px; border-radius: 8px; margin-bottom: 15px; color: white;">
+        <p style="text-align: center; font-weight: bold;">Välj hantverkare</p>
+
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            
+            <label style="background-color: black;padding: 10px; width: 70px;">
+                <input type="radio" name="Tjänsteman" value="josh">
+                Josh <br>
+                <img src="pictures/Josh.jpg" style="width:40px; height: 40px;">
+            </label>
+
+            <label style="background-color: black;padding: 10px; width: 70px;">
+                <input type="radio" name="Tjänsteman" value="olle">
+                Olle <br>
+                <img src="pictures/Olle.jpg" style="width:40px; height: 40px;">
+            </label>
+
+            <label style="background-color: black;padding: 10px; width: 70px; ">
+                <input type="radio" name="Tjänsteman" value="sigge">
+                Sigge <br>
+                <img src="pictures/sigge.jpg" style="width:40px; height: 40px;">
+            </label>
+
+        </div>
+    </div>
+
+    <!-- DATE + DAYS -->
+    <div style="margin-bottom: 15px;">
+        <label>Datum:</label><br>
+        <input type="date" name="thedate" style="width: 100%; padding: 8px;">
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <label>Antal dagar</label><br>
+        <input type="number" name="antal" min="1" max="10" step="1" style="width: 100%; padding: 8px;">
+    </div>
+
+    <!-- CONTACT -->
+    <div style="margin-bottom: 15px;">
+        <label>E-post</label><br>
+        <input type="email" name="epost" placeholder="example@email.com" required style="width: 100%; padding: 8px;">
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <label>Adress</label><br>
+        <input type="text" name="adress" placeholder="Svangränd 1" required style="width: 100%; padding: 8px;">
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label>Telefon</label><br>
+        <input type="tel" name="telnum" placeholder="070-123 45 67" required style="width: 100%; padding: 8px;">
+    </div>
+
+    <div>
+        <textarea id="expectations" name="expectations" rows="5" cols="80" placeholder="Önskemål, frågor eller saker vi behöver veta..."></textarea>
+    </div>
+     <br>
+    <!-- BUTTON -->
+    <div style="text-align: center;">
+        <div style="display: flex; align-items: center; gap: 15px; justify-content: center;">
+            <p style="margin: 0;" >Nyhetsbrev?</p>
+            <label><input type="radio" name="nyhetsbrev" value="jaNyheter" required></input> Ja</label>
+            <label><input type="radio" name="nyhetsbrev" value="nejNyheter"></input> Nej</label>
+        </div>
+        
+        <br>
+        <div style="display: flex; align-items: center; gap: 15px; justify-content: center; font-size: 20;">
+        <input type="submit" value="Skicka" style="font-size: larger;">
+        <a href="index.html">StartSida</a>
+        </div>
+       
+        
+
+    </div>
+
+
+</form>
+
+</body>
