@@ -1,0 +1,172 @@
+/* RESET */
+*{
+        border: 2px  solid red;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* BACKGROUND */
+.bodyIndex {
+    background-image: url('../pictures/konfetti.jpg');
+}
+
+/* HEADER */
+.headlineIndexh1 {
+    background-color: rgba(13, 226, 59);
+    padding: 6px 12px;
+    margin: 10px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.headlineIndex {
+    text-align: center;
+}
+
+/* NAV */
+.centerUrl {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.indexLinks {
+    background-color: rgba(13, 226, 59, 0.8);
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.indexLinks:hover {
+    background-color: rgb(192, 0, 144);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 🔥 MAIN FIX */
+main, footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    align-items: stretch;
+        justify-content: center;
+
+    
+}
+
+/* CARD */
+.omOssDivList {
+    flex: 1;
+    background-color: pink;
+    border-radius: 30px;
+    align-self: stretch;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* IMAGE */
+main img {
+    flex: 1;
+   width: 100%;
+    max-width: 300px;
+    border-radius: 30px;
+    align-self: stretch;
+}
+
+.iframeClass{
+    width: 100%;
+     flex: 1;
+}
+
+.iframeClassLinksDiv{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.iframeClassLinks{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    z-index: 1;
+    background-image: url('../pictures/dinoimg2.png');        
+    transition: 0.3s;
+
+}
+
+iframe:hover {
+        width: 175%;
+    transition: 0.3s;
+ position: relative; /* add this */
+z-index: 999;
+}
+
+/* LIST */
+li {
+    padding: 10px;
+}
+
+li:hover {
+    background-color: rgb(202, 140, 186);
+    border-radius: 10px;
+    transform: scale(1.2);
+    width: 85%;
+}
+
+/* VIDEO */
+.videoContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.videoBox {
+    display: flex;
+    gap: 10px;
+    background-color: purple;
+    padding: 10px;
+    max-width: 850px;
+}
+
+.videoBox iframe {
+    width: 400px;
+    height: 325px;
+    border: none;
+}
+
+/* FOOTER */
+.footerContent {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px;
+}
+footer {
+    background-color: purple;
+}
+.footerContent img,
+.footerContent iframe {
+    width: 200px;
+    height: 300px;
+}
